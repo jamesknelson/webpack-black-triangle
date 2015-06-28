@@ -4,7 +4,6 @@ var webpack = require('webpack');
 module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/dev-server',
     'babel/polyfill',
     './src/theme/main.less',
     './src/main'
@@ -21,9 +20,6 @@ module.exports = {
       { test: /\.less$/, loader: "style!css!autoprefixer!less" }
     ]
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
   devServer: {
     contentBase: "./src"
   }
