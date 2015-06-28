@@ -1,0 +1,34 @@
+.BlackTriangle {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+
+  &-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 277.2px;
+    height: 277.2px;
+    margin-top: -138.6px;
+    margin-left: -138.6px;
+    border-radius: 100%;
+
+    &:before {
+      position:absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      margin-top: -136px;
+      margin-left: -120px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 120px 207.8px 120px;
+      border-color: transparent transparent #000 transparent;
+    }
+  }
+}
