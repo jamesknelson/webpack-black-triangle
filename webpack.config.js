@@ -3,10 +3,10 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
     'babel/polyfill',
     './src/theme/main.less',
-    './src/main'
+    './src/main',
+    'webpack-dev-server/client?http://localhost:8080'
   ],
   output: {
       publicPath: '/',
