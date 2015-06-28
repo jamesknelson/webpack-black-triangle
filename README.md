@@ -17,17 +17,18 @@ Read how it works at [jamesknelson.com](http://www.jamesknelson.com).
 - Handle your deployment build
 - Include any runtime dependencies (other than babel's polyfill)
 
-## Install with three lines
+## Install with four lines
 
 Just `git clone` & `npm install`:
 
 ```
 git clone https://github.com/jamesknelson/webpack-black-triangle.git
+cd webpack-black-triangle
 npm install webpack-dev-server -g
 npm install
 ```
 
-## Then use it
+## Then use it with one more
 
 Run the dev server:
 
