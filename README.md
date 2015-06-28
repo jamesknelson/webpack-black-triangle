@@ -2,7 +2,7 @@
 
 A minimal, development-focussed template to get you up and running with Webpack, Babel & LESS.
 
-Read how it works at [jamesknelson.com](http://www.jamesknelson.com).
+Read how it works at [jamesknelson.com](http://jamesknelson.com/write-es2015-with-instant-feedback-using-webpack-dev-server-and-babel/).
 
 **Things it does**:
 
