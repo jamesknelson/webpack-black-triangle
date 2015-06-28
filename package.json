@@ -22,7 +22,7 @@
     "url" : "https://github.com/jamesknelson/webpack-black-triangle.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "keywords": [
     "webpack",
