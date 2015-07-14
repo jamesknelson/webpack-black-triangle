@@ -1,8 +1,8 @@
 export default class BlackTriangle {
-  constructor(selector) {
-    this.angle = 0;
+  angle = 0;
+  innerEl = document.createElement('div');
 
-    this.innerEl = document.createElement('div');
+  constructor(selector) {
     this.innerEl.className = "BlackTriangle-inner";
 
     this.el = document.querySelector(selector)

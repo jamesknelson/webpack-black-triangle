@@ -16,8 +16,16 @@ module.exports = {
   devtool: 'source-map',
   module: {
     loaders: [
-      { test: /\.js$/, include: path.join(__dirname, 'src'), loader: 'babel-loader' },
-      { test: /\.less$/, loader: "style!css!autoprefixer!less" }
+      {
+        test: /\.js$/,
+        include: path.join(__dirname, 'src'),
+        loader: 'babel-loader',
+        query: {stage: 0},
+      },
+      { 
+        test: /\.less$/,
+        loader: "style!css!autoprefixer!less",
+      },
     ]
   },
   devServer: {
