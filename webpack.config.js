@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [
-    'babel/polyfill',
+    'babel-polyfill',
     './src/theme/main.less',
     './src/main',
     'webpack-dev-server/client?http://localhost:8080'
@@ -16,8 +16,18 @@ module.exports = {
   devtool: 'source-map',
   module: {
     loaders: [
-      { test: /\.js$/, include: path.join(__dirname, 'src'), loader: 'babel-loader' },
-      { test: /\.less$/, loader: "style!css!autoprefixer!less" }
+      { 
+        test: /\.js$/,
+        include: path.join(__dirname, 'src'),
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
+      },
+      { 
+        test: /\.less$/,
+        loader: "style!css!autoprefixer!less"
+      },
     ]
   },
   devServer: {
