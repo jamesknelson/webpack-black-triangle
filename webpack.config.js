@@ -27,7 +27,7 @@ module.exports = {
       { 
         test: /\.less$/,
         loader: "style!css!autoprefixer!less"
-      },
+      }
     ]
   },
   devServer: {
