@@ -12,11 +12,15 @@ module.exports = {
       publicPath: '/',
       filename: 'main.js'
   },
-  debug: true,
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+        debug: true
+    })
+  ],
   devtool: 'source-map',
   module: {
     loaders: [
-      { 
+      {
         test: /\.js$/,
         include: path.join(__dirname, 'src'),
         loader: 'babel-loader',
@@ -24,9 +28,9 @@ module.exports = {
           presets: ['es2015']
         }
       },
-      { 
+      {
         test: /\.less$/,
-        loader: "style!css!autoprefixer!less"
+        loader: "style-loader!css-loader!autoprefixer-loader!less-loader"
       },
     ]
   },
